@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating a promise
+//  let myPromise = new Promise((resolve, reject) => {
+ 
+//  setTimeout(() => {
+//     let success = false;
+//     if (success) {
+//       resolve("Operation completed successfully!");
+//     } else {
+//       reject("Operation failed!"); 
+//     }
+//   },2000); 
+// });
+
+// // Consuming the promise
+// myPromise.then((successMessage) => {
+//   console.log(successMessage); 
+// }).catch((errorMessage) => {
+//   console.log(errorMessage); 
+// });
+// 
+let myPromise = new Promise ((resolve,reject) =>{
+    setInterval(() =>{
+        let success = false;
+        if (success){
+            resolve("Today a holiday");
+        }else{e
+            reject("today i am not coming");
+        }
+    },2000);
+});
+ myPromise.then((successMessage) => {
+   console.log(successMessage); 
+ }).catch((errorMessage) => {
+   console.log(errorMessage); 
+ });
+
+    </script>
+</body>
+</html>

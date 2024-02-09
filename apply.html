@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>JavaScript Functions</h2>
+  <p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+  
+  <p id="demo"></p>
+  
+  <script>
+  // const person = {
+  //   fullName: function(city, country) {
+  //     return this.firstName + " " + this.lastName + "," + city + "," + country;
+  //   }
+  // }
+  
+  // const person1 = {
+  //   firstName:"John",
+  //   lastName: "Doe"
+  // }
+  
+  // document.getElementById("demo").innerHTML = person.fullName.apply(person1, ["Oslo", "Norway"]); 
+
+const showroom ={
+   fullname:function( woner1 ,woner2){
+    return this.carname + " " + this.carname2 + "," + woner1 + "," + woner2;
+   }
+}
+ const  showroom2 ={
+    carname:"varna",
+    carname2:"forchunar"
+ }
+  document.getElementById("demo").innerHTML = showroom.fullname.apply(showroom2, ["Bhavik", "parth"]);  
+
+  </script>
+
+
+</body>
+</html>

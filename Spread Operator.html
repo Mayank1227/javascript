@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- spread opretar bane object ne march + (concet array)  kari 
+           nakhase or jo hamane updet kiya hoga vo print karvayega-->
+    <script>
+        const myVehicle = {
+          brand: 'Ford',
+          model: 'Mustang',
+          color: 'red'
+        }
+        
+        const updateMyVehicle = {
+          type: 'car',
+          year: 2021, 
+          color: 'yellow'
+        }
+        
+        const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+        console.log(myUpdatedVehicle);
+//  
+// 
+        const shop={
+            chaval:"40 kg",
+            sugar :":40 kg",
+            papad :"60 kg"
+        }
+        const upadetshop ={
+            chaval:"60 kg",
+            sugar :":40 kg",
+            papad :"55 kg",
+            chaiptti :"400 kg",
+            pen : "5"
+        }
+        const myupadetshop ={...shop,...upadetshop}
+        console.log(myupadetshop)
+        </script>
+</body>
+</html>

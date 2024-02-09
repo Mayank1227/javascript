@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const apiurl= "https://jsonplaceholder.typicode.com/todos/1"
+
+        // fetch(apiurl).then((r)=>{return r.json()}).then(r=>console.log(r)).catch((e)=>{console.log(e)})
+
+        
+
+     const apiurl= "https://jsonplaceholder.typicode.com/todos/"
+
+    fetch(apiurl)
+    .then((r)=>r.json()).then((r)=>{
+
+         r.forEach(element => {
+            console.log(element.title)
+         });
+    })
+    .catch((e)=>console.log(e))
+
+    // </script>
+</body>
+</html>

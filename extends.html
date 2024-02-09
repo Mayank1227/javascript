@@ -8,28 +8,28 @@
 <body>
     <script>
     
-//  class Animal {
-//   constructor(name) {
-//     this.name = name;
-//   }
+ class Animal {
+  constructor(name) {
+    this.name = name;
+  }
 
-//   speak() {
-//     console.log(`${this.name} makes a sound.`);
-//   }
-// }
-// class Dog extends Animal {
-//   constructor(name, breed) {
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+class Dog extends Animal {
+  constructor(name, breed) {
    
-//     super(name);
-//     this.breed = breed;
-//   }
-//   bark() {
-//     console.log(`${this.name} barks loudly.`);
-//   }
-// }
-// const myDog = new Dog('Buddy', 'Labrador');
-// myDog.speak(); 
-// myDog.bark(); 
+    super(name);
+    this.breed = breed;
+  }
+  bark() {
+    console.log(`${this.name} barks loudly.`);
+  }
+}
+const myDog = new Dog('Buddy', 'Labrador');
+myDog.speak(); 
+myDog.bark(); 
 
 // 
 class student {
@@ -55,35 +55,26 @@ const myparth = new parth('vishnu', 'manish');
 myparth.speak(); 
 myparth.bark(); 
 // 
-// 
-// class ExampleClass {
-//   // Static property
-//   static staticProperty = "I am a static property";
-
-//   // Static method
-//   static staticMethod() {
-//     console.log("I am a static method");
-//   }
-
-//   // Regular (instance) method
-//   regularMethod() {
-//     console.log("I am a regular method");
-//   }
-// }
-
-// // Accessing static property
-// console.log(ExampleClass.staticProperty);
-
-// // Calling static method
-// ExampleClass.staticMethod();
-
-// // Creating an instance of the class
-// const instance = new ExampleClass();
-
-// // Calling regular method on the instance
-// instance.regularMethod();
-
-
+//perent class
+class A {
+  money = 10000
+  preforemoperation(){
+    console.log("do sugery")
+  }
+}
+// child class
+class B extends A {
+  showMyMoney(){
+    console.log(this.money)
+  }
+  preforemoperation(){
+    super.preforemoperation()
+    console.log("I have own techinique")
+  }
+}
+child = new B()
+child.showMyMoney()
+child. preforemoperation()
 
     </script>
 </body>

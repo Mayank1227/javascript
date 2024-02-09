@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // not use grttter method
+        class Hulk{
+            name="mayank"
+            aeg = 23
+            #mob = "7359658062"
+
+     // getter
+            getmobile=()=>{
+                const mobile = this.#mob
+                return mobile
+            }
+            setMobile =(x)=>{
+                this.#mob=x
+            }
+        } 
+        const mayank = new Hulk()
+        console.log(mayank.getmobile())
+
+        mayank.setMobile("1232456534")
+        console.log(mayank.getmobile())
+  // 
+  //  grtter method 
+ class Human{
+         name="mayank"
+         aeg = 23
+         #mob = "7359658062" // private number
+         get mobile(){
+            this.#mob
+          }
+      }
+      const parth =new Human()
+      console.log(parth)
+      console.log(parth.mobile)
+//     //   
+    class flight{
+        name ="india air"
+        date = "2/7/2024"
+        #price ="3400"   //private price
+        get price(){
+            this.#price
+        }
+    }
+      const one = new flight()
+      console.log(one) 
+      console.log(one.price)
+    //   
+    class train{
+        name = "vande bharat"
+        city = "mubai"
+        #localstop = "surat" //privet stop
+        stop ="amhedabad"
+        get localstop(){
+            this.#localstop
+        }
+    }
+     const two = new train()
+     console.log(two)
+     console.log(two.localstop)
+    </script>
+</body>
+</html>
