@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function floydsTriangle(rows) {
+    let number = 1;
+    let triangle = '';
+    for (let i = 1; i <= rows; i++) {
+        for (let j = 1; j <= i; j++) {
+            triangle += number + ' ';
+            number++;
+        }
+        triangle += '\n';
+    }
+    return triangle;
+}
+
+// Example usage:
+const numRows = 5;
+console.log(floydsTriangle(numRows));
+
+//   or  //
+
+// function floydsTriangleAlphabet(rows) {
+//     let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+//     let currentCharIndex = 0;
+//     let triangle = '';
+//     for (let i = 1; i <= rows; i++) {
+//         for (let j = 1; j <= i; j++) {
+//             triangle += alphabet[currentCharIndex] + ' ';
+//             currentCharIndex = (currentCharIndex + 1) % 26;
+//         }
+//         triangle += '\n';
+//     }
+//     return triangle;
+// }
+
+// // Example usage:
+// const numrows = 5;
+// console.log(floydsTriangleAlphabet(numrows));
+
+    </script>
+</body>
+</html>

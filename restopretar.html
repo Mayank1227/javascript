@@ -35,43 +35,6 @@ console.log(fum(1,2,3,5,6,7));
 console.log(fum(1,2,3,4,5,6,7,8,9));
 
 
-
-function printDiamond(rows) {
-    if (rows % 2 === 0) {
-        rows++; // Ensure an odd number of rows for proper diamond shape
-    }
-
-    let midpoint = Math.floor(rows / 2) + 1;
-
-    for (let i = 1; i <= rows; i++) {
-        let output = '';
-        let spaces = Math.abs(midpoint - i);
-        let stars = rows - 2 * spaces;
-
-        // Add spaces
-        for (let j = 0; j < spaces; j++) {
-            output += ' ';
-        }
-
-        // Add stars
-        for (let k = 0; k < stars; k++) {
-            output += '*';
-        }
-
-        console.log(output);
-    }
-}
-
-// Example usage
-printDiamond(5);
-
-
-
-
-
-
-
-
     </script>
 </body>
 </html>
