@@ -27,22 +27,29 @@
 //   console.log(errorMessage); 
 // });
 // 
-let myPromise = new Promise ((resolve,reject) =>{
-    setInterval(() =>{
-        let success = false;
-        if (success){
-            resolve("Today a holiday");
-        }else{e
-            reject("today i am not coming");
-        }
-    },2000);
-});
- myPromise.then((successMessage) => {
-   console.log(successMessage); 
- }).catch((errorMessage) => {
-   console.log(errorMessage); 
- });
-
+// let myPromise = new Promise ((resolve,reject) =>{
+//     setInterval(() =>{
+//         let success = false;
+//         if (success){
+//             resolve("Today a holiday");
+//         }else{e
+//             reject("today i am not coming");
+//         }
+//     },2000);
+// });
+//  myPromise.then((successMessage) => {
+//    console.log(successMessage); 
+//  }).catch((errorMessage) => {
+//    console.log(errorMessage); 
+//  });
+// 
+console.log("line 1")
+const myPromise = new Promise((resolve,reject) =>{
+    setTimeout(() =>{
+        console.log("line 2")
+        resolve9()},3000)
+    })
+    myPromise.then(()=>{console.log("line 3")}).then(()=>{console.log("line 4")}).catch(()=>{console.log("error")})
     </script>
 </body>
 </html>

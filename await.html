@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let secondTaken =0
+        let myPromise =  new Promise((resoleve,reject)=>{
+            setTimeout(()=>{
+             resoleve = (secondTaken++)
+            },1000)
+        })
+          
+        async function  myfun(){
+        let myname =await myPromise
+            console.log(newfuns)
+        }
+          myPromise.then(()=>{console.log(secondTaken)}).catch()  
+        // 
+        // 
+        
+    </script>
+</body>
+</html>

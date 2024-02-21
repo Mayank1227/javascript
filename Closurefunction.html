@@ -7,13 +7,19 @@
 </head>
 <body>
     <script>
-    const arr = ["surj","mayank","parth","bhavik"]
-    
-    const newArr =arr.filter((item)=>{
-        return item!="parth"
-    })
-    console.log(arr)
-    console.log(newArr)
+
+        // /outer ni velyu inar laisake inarni velyu outar na lai sake
+        function greet() {
+  const name = 'John';
+
+  return function () {
+    console.log(`Hi ${name}`);
+  };
+}
+
+const greeting = greet();
+
+greeting();
     </script>
 </body>
 </html>
